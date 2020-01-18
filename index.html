@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-	<meta name="generator" content="Hugo 0.61.0" />
+	<meta name="generator" content="Hugo 0.62.0" />
     
 
 <meta property="og:title" content="First Workshop on Online Map Validation and Road Model Creation" />
@@ -21,6 +21,7 @@
 <link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="/css/style.min.18d16e79789c975c7e492bc47a5926264686ee232c5fa745ab4cbc449207d767.css" integrity="sha256-GNFueXicl1x&#43;SSvEelkmJkaG7iMsX6dFq0y8RJIH12c=">
 <link rel="stylesheet" type="text/css" href="/css/icons.css">
+<link rel="stylesheet" type="text/css" href="/css/cookieconsent.min.css" />
 
   </head>
   <body>
@@ -611,9 +612,41 @@
 <script src="/js/jquery.panelslider.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 
+
+
+<script src="/js/cookieconsent.min.js"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#f2f2f2",
+      "text": "#344258"
+    },
+    "button": {
+      "background": "#4fc1ea",
+      "text": "#344258"
+    }
+  },
+  "theme": "classic",
+  "position": "bottom-right",
+  "type": "opt-in",
+  "content": {
+    "message": "This website would like to use the open source tool Matomo to gather insights about when and where the site is accessed. We'd only store the first 2 bytes of your IP, plus any user data would be pseudonymized if not anonymized and deleted after 180 days. However, the choice is yours!"
+  },
+  onStatusChange: function(status) {
+    console.log(this.hasConsented() ?
+      'enable cookies' : 'disable cookies');
+    if (this.hasConsented()) {
+      window._paq.push(['rememberConsentGiven']);
+    }
+  }
+});
+</script>
+
 <script type="text/javascript">
   var _paq = window._paq || [];
    
+  _paq.push(['requireConsent']);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {
