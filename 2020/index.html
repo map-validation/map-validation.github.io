@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	<meta name="generator" content="Hugo 0.80.0" />
+    
+
+<meta property="og:title" content="First Workshop on Online Map Validation and Road Model Creation" />
+<meta property="og:description" content="iv2020, conference, map validation, autonomous driving, change detection, maps, mapping, slam" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://map-validation.github.io/" />
+
+
+
+<meta name="description" content="iv2020, conference, map validation, autonomous driving, change detection, maps, mapping, slam" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>First Workshop on Online Map Validation and Road Model Creation</title>
+    
+<link rel="icon" type="image/png" href="/images/favicon.png" />
+<link href="https://fonts.googleapis.com/css?family=Open&#43;Sans:400,600" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/css/style.min.64ad9424043ce97df5b22fbab089ae334c8cebd33972d44aa2f1bacb954ff000.css" integrity="sha256-ZK2UJAQ86X31si&#43;6sImuM0yM69M5ctRKovG6y5VP8AA=">
+<link rel="stylesheet" type="text/css" href="/css/icons.css">
+<link rel="stylesheet" type="text/css" href="/css/cookieconsent.min.css" />
+
+  </head>
+  <body>
+    
+    <div id="preloader">
+      <div id="status"></div>
+    </div>
+
+    
+    
+    <section class="hero is-fullheight is-default is-bold">
+  
+
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/mavroc.png" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="#section5" class="navbar-item">
+            <span class="button signup-button rounded secondary-btn raised">
+              Schedule
+            </span>
+          </a>
+          <a href="#section1" class="navbar-item is-secondary">
+            Scope
+          </a>
+          <a href="#section4" class="navbar-item is-secondary">
+            Invited Speakers
+          </a>
+          <a href="#section3" class="navbar-item is-secondary">
+            Rationale
+          </a>
+          <a href="#section6" class="navbar-item is-secondary">
+            Organizers
+          </a>
+          <a href="#section2" class="navbar-item is-secondary">
+            Call for Papers
+          </a>
+        </div>
+      </div>
+  </div>
+</nav>
+
+  
+
+<nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <img src="/images/logos/mavroc.png" alt="" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+
+      <div class="navbar-end">
+        <a href="#section5" class="navbar-item">
+          <span class="button signup-button rounded secondary-btn raised">
+            Schedule
+          </span>
+        </a>
+        <a href="#section1" class="navbar-item is-secondary">
+          Scope
+        </a>
+        <a href="#section4" class="navbar-item is-secondary">
+          Invited Speakers
+        </a>
+        <a href="#section3" class="navbar-item is-secondary">
+          Rationale
+        </a>
+        <a href="#section6" class="navbar-item is-secondary">
+          Organizers
+        </a>
+        <a href="#section2" class="navbar-item is-secondary">
+          Call for Papers
+        </a>
+      </div>
+    </div>
+</div>
+</nav>
+
+  
+<div class="hero-body">
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column is-5 landing-caption">
+        <h1 class="title is-1 is-bold is-spaced">
+          Workshop on Online Map Validation and Road Model Creation.
+        </h1>
+        
+        <h2 class="subtitle is-5 is-muted">
+          A workshop being held in conjunction with the<br><strong><a href="https://2020.ieee-iv.org/" target="_blank">IEEE Intelligent Vehicles Symposium - IV2020</a>,</strong> <strong>October 23rd,</strong> 2020, Las Vegas, NV, United States.
+        </h2>
+        
+        <p>
+          <a class="button cta rounded primary-btn raised" href="#section5">
+            Schedule
+          </a>
+        </p>
+      </div>
+      <div class="column is-5 is-offset-1">
+        <figure class="boximage is-4by3">
+          <img src="/images/illustrations/map_validation.png" alt="Description">
+        </figure>
+      </div>
+      </div>
+      <div class="column is-9 is-offset-1">
+          <figure class="announcements">
+  	  <blockquote style='background-color: #ff0000'>
+              <h2><b>Archived Version</b></h2>
+	      You are currently watching the archived version of the MaVRoC`20 workshop. You may find the current version <a href="https://map-validation.github.io">here.</a>
+  	  </blockquote>
+  	</figure>
+        <br/>
+          <figure class="announcements">
+  	  <blockquote>
+              <h2><b>Do you want to get involved?</b></h2>
+	      Given the positive feedback for MaVRoc`20, we're considering to organize MaVRoC`21.<br>If you want to get involved, <a href="mailto:iv2020-ws-map-road-validation@bmw.com">send us a message</a>!
+  	  </blockquote>
+  	</figure>
+        <br/>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<div class="hero-foot mb-20">
+  <div class="container">
+    <div class="tabs is-centered">
+      <ul>
+        <li>
+          <a>
+            <img class="partner-logo" src="/images/logos/clients/bmwgroup.svg">
+          </a>
+        </li>
+        <li>
+          <a>
+            <img class="partner-logo" src="/images/logos/clients/uni_mannheim.svg">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+    
+
+    
+    
+<section class="section section-feature-grey is-medium" id="section1">
+  <div class="container">
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">Scope</h2>
+      <br>
+    </div>
+    <div class="title-wrapper has-text-justified">
+      <h3 class="subtitle is-5">The goal of this half-day workshop is to form a platform for exchanging ideas, fostering research and connecting both industry and academia in the domain of offline map and online road model creation and validation for autonomous driving.<br><br>This workshop will provide the opportunity to discuss about scenarios (highways and urban environments), ways of data collection (i.e. single vehicle and vehicle fleets) as well as data processing (in-vehicle and  backend).<br><br>To this end we welcome contributions related to the following topics:</h3>
+      <div class="divider is-centered"></div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns">
+        <div class="column is-one-third">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Validated Road Models</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/map.svg">
+            </div>
+            <div class="card-text">
+                <p>Creation of validated road models both at runtime and offline, both from single vehicles as well as from a fleet of vehicles.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Map Data Life-Cycle Management</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/direction.svg">
+            </div>
+            <div class="card-text">
+                <p>Life-cycle management of map data, i.e. initial creation, change detection, update, verification and deployment.</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+            <div class="card-title">
+              <h4>Mapping Fraud Detection and Prevention</h4>
+            </div>
+            <div class="card-icon">
+                <img src="/images/illustrations/icons/fraud2.svg">
+            </div>
+            <div class="card-text">
+                <p>Mapping fraud detection and prevention, i.e. manipulation of traffic signs, fleet data spoofing.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title-wrapper has-text-centered">
+        <h3 class="subtitle is-5">Accepted papers will be published in IEEE Xplore!</h3>
+        <div class="divider is-centered"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+    
+    
+<section class="section is-medium section-secondary" id="section4">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text is-spaced">Invited Speakers</h2>
+      <h3 class="subtitle is-5 light-text">We are proud to welcome the following invited speakers.</h3>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns is-vcentered">
+	
+	
+	<div class=column&#32;is-6>
+          <figure class="testimonial">
+            <blockquote>
+              Safe Automated Driving in a Changing World - Challenges and Trends
+            </blockquote>
+            <div class="author2">
+		    <p><img src="/images/illustrations/faces/christoph.png" alt=""/>
+		    <img src="/images/illustrations/faces/jan.png" alt=""/></p>
+              <h5>Christoph Stiller &amp; Jan-Hendrik Pauls</h5>
+	      <span>Professor &amp; PhD Student<br><a href="https://www.mrt.kit.edu/" target="_blank">Institut für Mess- und Regelungstechnik, KIT</a></span>
+            </div>
+          </figure>
+        </div>
+	
+	<div class=column&#32;is-6>
+          <figure class="testimonial">
+            <blockquote>
+              Map validation for autonomous driving – How to describe and verify accuracy, integrity and completeness of HD Maps
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/gunnar.png" alt=""/>
+              <h5>Gunnar Gräfe</h5>
+	      <span>Managing Director<br><a href="https://3d-mapping.de/en/" target="_blank">3D Mapping Solutions</a></span>
+            </div>
+          </figure>
+        </div>
+	
+      </div>
+      <div class="columns is-vcentered">
+	<div class=column&#32;is-6>
+          <figure class="testimonial">
+            <blockquote>
+              Sensible 4’s Solutions for Automated Driving in Urban Environment Enabling All-Weather Automated Driving Experience
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/umar.png" alt=""/>
+              <h5>Umar Zakir Abdul Hamid</h5>
+	      <span>Team Lead (Algorithm Development)<br><a href="https://www.sensible4.fi" target="_blank">Sensible 4</a></span>
+            </div>
+          </figure>
+        </div>
+	
+	<div class=column&#32;is-6>
+          <figure class="testimonial">
+            <blockquote>
+              Tencent HD Map Practice for Autonomous Driving in China
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/frank.png" alt=""/>
+              <h5>Frank Gu</h5>
+	      <span>Tencent HD Map Senior Director<br><a href="https://tencent.com/" target="_blank">Tencent</a></span>
+            </div>
+          </figure>
+        </div>
+	
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+    
+    
+<section class="section is-medium" id="section2">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+        <h1 class="title section-title">Call for Papers (closed)</h1>
+        <h3 class="subtitle is-5 is-muted">We are soliciting high quality papers covering, but not limited to, the following topics .<br><br><ul><li><a href="#section1">Validated Road Models</a></li><li><a href="#section1">Map Data Life-Cycle Management</a></li><li><a href="#section1">Mapping Fraud Detection and Prevention</a></li></ul><br>Paper length should not exceed 6 pages (two additional pages allowed with a fee) according to the <a href="https://its.papercept.net/conferences/scripts/start.pl" target="_blank">IEEE IV 2020 Guidelines</a>.<br><br>Each paper will undergo a peer-reviewing process by at least three independent reviewers. Contributions will be reviewed according to relevance, originality and novel ideas, technical soundness and quality of presentation.<br/><br/>The call for papers has been closed. We thank all the authors for their contributions. Have a look at the <a href="#section5"> schedule</a> to get an overview of the accepted contributions.</h3>
+      </div>
+      <div class="column is-5 mt-40">
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <img src="/images/illustrations/icons/laptop-globe.svg">
+            </p>
+          </figure>
+          <div class="media-content mt-10">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">Submission Deadline</span>
+
+                <span class="icon-box-text">March 14th, 2020 (firm deadline, no extensions)<br>Submission through <a href="https://its.papercept.net/conferences/scripts/start.pl" target="_blank">PaperPlaza</a> (closed)<br>Workshop code: <strong>hr9k9</strong></span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <img src="/images/illustrations/icons/laptop-globe.svg">
+            </p>
+          </figure>
+          <div class="media-content mt-10">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">Notification Date</span>
+
+                <span class="icon-box-text">April 18th, 2020</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="media icon-box">
+          <figure class="media-left">
+            <p class="image">
+              <img src="/images/illustrations/icons/laptop-globe.svg">
+            </p>
+          </figure>
+          <div class="media-content mt-10">
+            <div class="content">
+              <p>
+                <span class="icon-box-title">Camera-ready Deadline</span>
+
+                <span class="icon-box-text">May 2nd, 2020</span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="divider is-centered"></div>
+  </div>
+</section>
+
+    
+
+    
+    
+<section class="section section-feature-grey is-medium" id="section3">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">Rationale</h2>
+      <h3 class="subtitle is-5 is-muted"></h3>
+    </div>
+    
+    <div class="columns">
+      <div class="column is-5 is-offset-1">
+        <div class="has-text-justified">
+		Safety and comfort of autonomous vehicles (AVs) critically depend on the availability of accurate environment models. At runtime, data coming from maps and from sensors are fused together with the goal of providing a unique and consistent view of the environment to software components  responsible  for  maneuver  and  trajectory planning.  One  integral  part  of  this  view  is  the  road model,  which  is  a  geometric  and  semantic  description of  the  road  around  the  AV,  composed  of  lanes,  traffic lights/signs,  traffic  rules  and  right  of  way.  From  the perspective of a fusion algorithm, maps are sensors with an almost unlimited field of view (FOV) and with a large, potentially  unknown,  perception  delay.  The  unlimited FOV provided by maps allow AVs to speculatively plan upcoming maneuvers and trajectories on those areas not observed by other sensors yet. In urban scenarios this is extremely important, since traffic can strongly occlude the  actual  FOV  of  other  sensors.  Still,  the  unknown delay affecting map data may yield to conclusions about the environment model based on outdated information.
+
+        </div>
+      </div>
+      <div class="column is-5">
+        <div class="has-text-justified">
+		For  example,  geometry  of  roads  can  change  due  to construction work. Thus it is imperative to either verify the validity of map data before fusing them with sensor data, or to build an online road model from in-vehicle sensors alone. Although  many  approaches  for  online  validation  of map exist, e.g, based on Simultaneous localization and mapping (SLAM), very few are suited at validating maps with the stringent accuracy requirements typically found in AV applications. The desired accuracy of maps used by AVs is typically in the range of a few centimeters. Also, algorithms responsible for map validation, need to be able to validate an area of a map, before the AV enters that area. Finally, the large amount of data contained in the high-definition (HD) maps used by AVs, pose a variety of  problems  in  satisfying  performance  requirements  at runtime. Additionally, approaches for online road model creation typically assume highway scenarios and are thus not applicable to urban environments.
+
+        </div>
+      </div>
+    </div>
+
+    <div class="divider is-centered"></div>
+    <p class="has-text-centered mt-20">
+      <a class="button cta is-large rounded secondary-btn raised" href="#section2">
+        Call for Paper
+      </a>
+    </p>
+  </div>
+</section>
+
+    
+
+    
+    
+<section class="section is-medium" id="section5">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2">Schedule</h2>
+      <h3 class="subtitle is-5 is-muted">Please note that this schedule is still preliminary and as such, subject to change.</h3>
+    </div>
+    <div class="content-wrapper">
+      <div class="columns">
+      <div class="column is-12">
+      <table>
+	<tr>
+	  <th>Begin</th>
+	  <th></th>
+	  <th>End</th>
+	  <th>Title</th>
+	  <th>Speaker/Author</th>
+	  <th>Type</th>
+	</tr>
+	<tr>
+	  <td>08:00</td>
+	  <td>-</td>
+	  <td>08:10</td>
+	  <td>Welcome Session</td>
+	  <td>Luca Parolini, Sebastian Schneider, Qing Rao, Jenny Yuan, Oliver Wasenmüller</td>
+	  <td></td>
+	</tr>
+	<tr style="background-color: #d3f0fa">
+	  <td>08:10</td>
+	  <td>-</td>
+	  <td>08:35</td>
+	  <td>Tencent HD Map Practice for Autonomous Driving in China</td>
+	  <td>Frank Gu</td>
+	  <td>Invited Talk</td>
+	</tr>
+	<tr style="background-color: #fbfbfb">
+	  <td>08:35</td>
+	  <td>-</td>
+	  <td>08:50</td>
+	  <td>Terminology and Analysis of Map Deviations in Urban Domains: Towards Dependability for HD Maps in Automated Vehicles</td>
+	  <td>Christopher Plachetka, Niels Maier, Jenny Fricke, Jan-Aike Termöhlen, Tim Fingscheidt</td>
+	  <td>Paper</td>
+	</tr>
+	<tr style="background-color: #d3f0fa">
+	  <td>08:50</td>
+	  <td>-</td>
+	  <td>09:15</td>
+	  <td>Safe Automated Driving in a Changing World - Challenges and Trends</td>
+	  <td>Christoph Stiller, Jan-Hendrik Pauls</td>
+	  <td>Invited Talk</td>
+	</tr>
+	<tr style="background-color: #fbfbfb">
+	  <td>09:15</td>
+	  <td>-</td>
+	  <td>09:30</td>
+	  <td>Real-Time Long-Range Road Estimation in Unknown Environments</td>
+	  <td>Jenny Yuan, Gary Lu, Philipp Friedrich, Yixin Xu</td>
+	  <td>Paper</td>
+	</tr>
+	<tr style="background-color: #fbfbfb">
+	  <td>09:30</td>
+	  <td>-</td>
+	  <td>09:45</td>
+	  <td>Siamese Networks for Online Map Validation in Autonomous Driving</td>
+	  <td>Felix Drost, Luca Parolini, Sebastian Schneider</td>
+	  <td>Paper</td>
+	</tr>
+	<tr style="background-color: #fbfbfb">
+	  <td>09:45</td>
+	  <td>-</td>
+	  <td>10:00</td>
+	  <td>Lidar-Based Deep Neural Network for Reference Lane Generation</td>
+	  <td>Philipp Martinek, Gheorghe Pucea, Qing Rao, Udhayaraj Sivalingam</td>
+	  <td>Paper</td>
+	</tr>
+	<tr>
+	  <td>10:00</td>
+	  <td>-</td>
+	  <td>10:10</td>
+	  <td>Break</td>
+	  <td></td>
+	  <td></td>
+	</tr>
+	<tr style="background-color: #d3f0fa">
+	  <td>10:10</td>
+	  <td>-</td>
+	  <td>10:35</td>
+	  <td>Map validation for autonomous driving – How to describe and verify accuracy, integrity and completeness of HD Maps</td>
+	  <td>Gunnar Gräfe</td>
+	  <td>Invited Talk</td>
+	</tr>
+	<tr style="background-color: #fbfbfb">
+	  <td>10:35</td>
+	  <td>-</td>
+	  <td>10:50</td>
+	  <td>Fast Lane-Level Intersection Estimation Using Markov Chain Monte Carlo Sampling and B-Spline Refinement</td>
+	  <td>Annika Meyer, Jonas Walter, Martin Lauer</td>
+	  <td>Paper</td>
+	</tr>
+	<tr style="background-color: #fbfbfb">
+	  <td>10:50</td>
+	  <td>-</td>
+	  <td>11:05</td>
+	  <td>Correlation-Based Approach to Online Map Validation</td>
+	  <td>Andrea Fabris, Luca Parolini, Sebastian Schneider, Angelo Cenedese</td>
+	  <td>Paper</td>
+	</tr>
+	<tr style="background-color: #d3f0fa">
+	  <td>11:05</td>
+	  <td>-</td>
+	  <td>11:30</td>
+	  <td>Sensible 4’s Solutions for Automated Driving in Urban Environment Enabling All-Weather Automated Driving Experience</td>
+	  <td>Umar Zakir Abdul Hamid</td>
+	  <td>Invited Talk</td>
+	</tr>
+	<tr style="background-color: #fbfbfb">
+	  <td>11:30</td>
+	  <td>-</td>
+	  <td>11:45</td>
+	  <td>Sensor Fusion-Based Online Map Validation for Autonomous Driving</td>
+	  <td>Sagar Bhavsar, Andrei Vatavu, Timo Rehfeld, Gunther Krehl</td>
+	  <td>Paper</td>
+	</tr>
+	<tr>
+	  <td>11:45</td>
+	  <td>-</td>
+	  <td>12:00</td>
+	  <td>Closing Session</td>
+	  <td>Luca Parolini, Sebastian Schneider, Qing Rao, Jenny Yuan, Oliver Wasenmüller</td>
+	  <td></td>
+	</tr>
+      </table>
+      </div>
+      </div>
+    </div>
+    <div class="media-content mt-20">    
+      <div class="divider is-centered"></div>
+    </div>
+  </div>
+</section>
+
+    
+
+    
+    
+<section class="section is-medium section-secondary" id="section6">
+  <div class="container">
+
+    <div class="title-wrapper has-text-centered">
+      <h2 class="title is-2 light-text is-spaced">Organizers</h2>
+      <h3 class="subtitle is-5 light-text">We give our best to make this workshop a success.</h3>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <figure class="biographies">
+            <blockquote>
+              Luca Paroloni received the B.Sc. degree in information engineering and the M.Sc. degree in automation engineering from the University of Padova, Padova, Italy, in 2004 and 2006, respectively and the Ph.D. degree in electrical and computer engineering from Carnegie Mellon University, Pittsburgh, PA, in 2012. He is a specialist S/W developer at BMW AG, Munich, Germany, which he joined in 2016. His research interests include functional development for autonomous vehicles, with a special focus on map and localization problems, functional safety, and functional degradation.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/parolini.png" alt=""/>
+              <h5>Luca Parolini</h5>
+	      <span><br>BMW</span>
+            </div>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="biographies">
+            <blockquote>
+              Sebastian Schneider received his Diploma degree in 2006 from Technical University of Darmstadt, Germany, with a major focus on computer vision and robotics. Since 2014, Sebastian works at BMW AG, Munich, Germany, as a sensor fusion expert in the area of driver assistance systems and autonomous driving. As such he has contributed to the design of the sensor setup as well as the sensor fusion architecture of upcoming level 4 autonomous vehicles. His current research interests include localization, map and road model validation and reinforcement learning.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/sesc.png" alt=""/>
+              <h5>Sebastian Schneider</h5>
+	      <span><br>BMW</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <figure class="biographies">
+            <blockquote>
+              Qing Rao received his Bachelor&#39;s degree in 2010 from Shanghai Jiao Tong University and his Master&#39;s degree in 2012 from TU Munich, with a major focus on computer vision and robotics. In 2019, he received his Ph.D. degree from TU Munich with the dissertation entitled Merging the Virtual and Real in a Car: In-Vehicle Augmented Reality. Since mid-2017, Qing works at BMW AG, Munich, Germany, as a machine learning expert in the area of autonomous driving. His current research interests include road model generation, 3D object detection, and active learning.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/qing.png" alt=""/>
+              <h5>Qing Rao</h5>
+	      <span><br>BMW</span>
+            </div>
+          </figure>
+        </div>
+        <div class="column is-6">
+          <figure class="biographies">
+            <blockquote>
+              Jenny Yuan holds a master degree from Technical University of Munich in Germany. Her major research direction is related to deep-learning and image processing in the field of computer vision, such as object detection and classification.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/jenny.png" alt=""/>
+              <h5>Jenny Yuan</h5>
+	      <span><br>BMW</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+      <div class="columns is-vcentered">
+        <div class="column is-6">
+          <figure class="biographies">
+            <blockquote>
+              Oliver Wasenmüller is full Professor at the Mannheim University for Applied Science. His research is in the intersection of Computer Vision and Artificial Intelligence with a focus on automotive. Previously he was a team leader for &#34;machine vision and autonomous vehicles&#34; at the German Research Center for Artificial Intelligence (DFKI). He is both speaker and reviewer in many scientific conferences in this field and co-organizes the ACM Computer Science in Cars Symposium (CSCS) as well as the IEEE CVPR workshop SAIAD.
+            </blockquote>
+            <div class="author">
+              <img src="/images/illustrations/faces/oliver.png" alt=""/>
+              <h5>Oliver Wasenmüller</h5>
+	      <span><br>Mannheim University for Applied Science</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+    
+
+    
+    
+<footer class="footer footer-dark">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="/images/logos/bmwgroup_uni_mannheim.png">
+        </div>
+      </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Contact</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="mailto:iv2020-ws-map-road-validation@bmw.com">
+                  iv2020-ws-map-road-validation@bmw.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3></h3>
+            </div>
+            <ul class="link-list">
+            </ul>
+          </div>
+        </div>
+        <div class="column">
+          <div class="footer-column">
+            <div class="footer-header">
+                <h3>Credits</h3>
+            </div>
+            <ul class="link-list">
+              <li>
+                <a href="https://www.flaticon.com/authors/darius-dan%22%20title=%22Darius%20Dan">
+                  Icons by Darius Dan
+                </a>
+              </li>
+              <li>
+                <a href="https://www.flaticon.com/authors/freepik">
+                  Icons by Freepik
+                </a>
+              </li>
+              <li>
+                <a href="https://www.flaticon.com/authors/smashicons">
+                  Icons by Smashicons
+                </a>
+              </li>
+              <li>
+                <a href="https://www.flaticon.com">
+                  Icons by Flaticon
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/StefMa/hugo-fresh">
+                  Template by StefNa
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      <div class="column">
+        <div class="footer-column">
+          <div class="footer-header">
+            <h3>Follow Us</h3>
+            <nav class="level is-mobile">
+              <div class="level-left">
+                <a class="level-item" href="https://github.com/map-validation">
+                  <span class="icon"><i class="fa fa-github"></i></span>
+                </a>
+                <a class="level-item" href="https://facebook.com/BMW">
+                  <span class="icon"><i class="fa fa-facebook"></i></span>
+                </a>
+                <a class="level-item" href="https://twitter.com/bmw">
+                  <span class="icon"><i class="fa fa-twitter"></i></span>
+                </a>
+                <a class="level-item" href="https://www.instagram.com/bmw/">
+                  <span class="icon"><i class="fa fa-instagram"></i></span>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+    
+
+
+    
+    <div id="backtotop"><a href="#"></a></div>
+
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="/js/fresh.js"></script>
+<script src="/js/jquery.panelslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+
+<script src="/js/cookieconsent.min.js"></script>
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#f2f2f2",
+      "text": "#344258"
+    },
+    "button": {
+      "background": "#4fc1ea",
+      "text": "#344258"
+    }
+  },
+  "theme": "classic",
+  "position": "bottom-right",
+  "type": "opt-in",
+  "content": {
+    "message": "This website would like to use the open source tool Matomo to gather insights about when and where the site is accessed. We'd only store the first 2 bytes of your IP, plus any user data would be pseudonymized if not anonymized and deleted after 180 days. However, the choice is yours!"
+  },
+  onStatusChange: function(status) {
+    console.log(this.hasConsented() ?
+      'enable cookies' : 'disable cookies');
+    if (this.hasConsented()) {
+      window._paq.push(['rememberConsentGiven']);
+    }
+  }
+});
+</script>
+
+<script type="text/javascript">
+  var _paq = window._paq || [];
+   
+  _paq.push(['requireConsent']);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//matomo.sesc.eu/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+  </body>
+</html>
