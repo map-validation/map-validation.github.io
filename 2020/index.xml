@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>First Workshop on Online Map Validation and Road Model Creation</title>
-    <link>https://map-validation.github.io/</link>
+    <link>https://map-validation.github.io/2020</link>
     <description>Recent content on First Workshop on Online Map Validation and Road Model Creation</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://map-validation.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://map-validation.github.io/2020/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
